@@ -6,6 +6,18 @@
   font-size: calc(10px + 2vmin);
 }
 
+.linkButton {
+  width: 35px;
+  height: 35px;
+}
+
+.copyButton {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -18,7 +30,7 @@
   background-color: #fafafa;
   height: 60px;
   max-width: 100%;
-  width: 62vmin;
+  width: 450px;
   border-radius: 12px;
   display: inline-flex;
   gap: 30%;
@@ -29,7 +41,7 @@
 
 a {
  text-decoration: none;
- color: black;
+ color: #000000;
 }
 
 .mediaContainer:hover{
@@ -38,7 +50,11 @@ a {
 
 .mediaName {
   font-size: 18px;
-  margin-left: 10px;
+  margin-left: 10px; 
+}
+
+.twitterMediaName {
+  font-size: 18px;
 }
 
 .linkLogo {
@@ -46,13 +62,7 @@ a {
   height: 30px;
 }
 
-.youtubeLogo {
-  width: 40px;
-  height: 40px;
-  margin-left: 4px;
-}
-
-.twitterLogo {
+.mediaLogo {
   width: 40px;
   height: 40px;
   margin-left: 4px;
@@ -62,6 +72,7 @@ a {
   width: 35px;
   height: 35px;
   margin-left: 4px;
+  margin-right: 14px; 
 }
 
 .mediaContainer p {
@@ -77,7 +88,3 @@ a {
 .App-header {
   margin-top: 5%;
 } 
-
-.App-link {
-  color: #61dafb;
-}
