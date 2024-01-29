@@ -116,4 +116,9 @@ a {
  margin-right: 2px;
  width: 380px;
  } 
+
+ .linkButton {
+  width: 28px;
+  height: 28px;
+ }
 }
