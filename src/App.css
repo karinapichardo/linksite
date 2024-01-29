@@ -46,6 +46,7 @@ a {
 
 .mediaContainer:hover{
   background-color: #f7f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .mediaName {
@@ -83,8 +84,17 @@ a {
   height: 28vmin;
   pointer-events: none;
   border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .App-header {
   margin-top: 5%;
 } 
+
+.copyright {
+  position: absolute;
+  font-weight: bold;
+  font-size: 14px;
+  bottom: 0;
+  right: 10px;
+}

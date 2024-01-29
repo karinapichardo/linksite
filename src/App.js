@@ -34,6 +34,7 @@ const App = () => {
           />
         </div>
       </header>
+      <p className='copyright'>Made by Karina :) </p>
     </div>
   );
 };
