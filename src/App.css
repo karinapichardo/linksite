@@ -76,6 +76,13 @@ a {
   margin-right: 14px; 
 }
 
+.emailLogo {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin-bottom: -8px;
+}
+
 .mediaContainer p {
   margin: 0;
 }
