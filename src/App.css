@@ -1,9 +1,14 @@
+.html {
+  overflow: hidden;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
 .name {
-  font-size: calc(10px + 2vmin);
+  font-size: 22px;
 }
 
 .linkButton {
@@ -104,4 +109,12 @@ a {
   font-size: 14px;
   bottom: 0;
   right: 10px;
+}
+
+@media (max-width: 767px) {
+.mediaContainer {
+ margin-left: 2px;
+ margin-right: 2px;
+ width: 380px;
+ } 
 }
