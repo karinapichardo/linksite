@@ -17,9 +17,7 @@ const App = () => {
   };
 
   const goBack = () => {
-    // Navigate back to the previous page or component
     setCollection(false);
-    console.log('l');
   };
 
   return (
