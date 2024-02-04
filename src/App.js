@@ -88,7 +88,7 @@ const App = () => {
               message='https://www.youtube.com/channel/UCx_X6YawdmcX1ojf8tRClKw'
               logo={youtubeLogo}
               mediaName='Youtube'
-              link='https://www.youtube.com/channel/UCx_X6YawdmcX1ojf8tRClKw'
+              link='https://www.youtube.com/channel/UCx_X6YawdmcX1ojf8tRClKw?sub_confirmation=1'
             />
             <MediaContainer
               message='https://twitter.com/karinapichardox'
