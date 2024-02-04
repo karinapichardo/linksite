@@ -3,7 +3,6 @@ import youtubeLogo from './youtube.png';
 import xLogo from './twitter.png';
 import mediumLogo from './medium.png';
 import emailLogo from './email.png';
-import peterQuote from './peter.png';
 
 import React, { useState } from 'react';
 import './App.css';
@@ -65,11 +64,32 @@ const App = () => {
               ></iframe>
             </div>
             <div className='collectionItemContainer'>
-              <img
-                src={peterQuote}
-                className='collectionImg'
-                alt='peter thiel quote'
-              />
+              <p className='quote'>
+                <span className='spanText'>
+                  'It's better to think of distribution as something essential
+                  to the design of your product.
+                </span>
+                <br />
+                <br />
+                If you've invented something new but you haven't invented an
+                effective way to sell it, you have a bad business—no matter how
+                good the product. <br />
+                <br />
+                <span className='spanText'>
+                  Superior sales and distribution by itself can create a
+                  monopoly, even with no product differentiation.
+                </span>
+                <br />
+                <br />
+                The converse is not true. <br />
+                <br />
+                No matter how strong your product-even if it easily fits into
+                already established habits and anybody who tries it likes it
+                immediately —you must still support it with a strong
+                distribution plan.' <br />
+                <br />
+                <span className='spanText'>- Peter Thiel</span>
+              </p>
             </div>
             <div className='collectionItemContainer'>
               <a
