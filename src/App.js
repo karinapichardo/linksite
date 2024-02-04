@@ -22,6 +22,7 @@ const App = () => {
   return (
     <div className='App'>
       <header className='App-header'>
+        <div className='headerContainer'>
         <img src={logo} className='profilePic' alt='logo' />
         <p className='name'>
           Karina Pichardo
@@ -39,7 +40,7 @@ const App = () => {
             Click for collection of things that inspire me
           </p>
         )}
-
+</div>
         {showCollection ? (
           <div className='collectionWrapper'>
             <div className='collectionItemContainer'>
@@ -66,7 +67,7 @@ const App = () => {
             <div className='collectionItemContainer'>
               <p className='quote'>
                 <span className='spanText'>
-                  'It's better to think of distribution as something essential
+                  "It's better to think of distribution as something essential
                   to the design of your product.
                 </span>
                 <br />
@@ -86,7 +87,7 @@ const App = () => {
                 No matter how strong your product-even if it easily fits into
                 already established habits and anybody who tries it likes it
                 immediately —you must still support it with a strong
-                distribution plan.' <br />
+                distribution plan." <br />
                 <br />
                 <span className='spanText'>- Peter Thiel</span>
               </p>
