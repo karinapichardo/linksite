@@ -134,11 +134,15 @@ a {
   height: 600px;
 }
 
+.spanText {
+  font-weight: bold;
+}
+
 .collectionLink {
   text-decoration: underline;
   display: flex;
   color: #1e30f7;
-  margin-top: -40px;
+  margin-top: -30px; 
 }
 
 .inspoHeader {

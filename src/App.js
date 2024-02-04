@@ -81,6 +81,40 @@ const App = () => {
                 via @FoundersPodcast
               </a>
             </div>
+            <div className='collectionItemContainer'>
+              <p className='quote'>
+                <span className='spanText'>
+                  On why Bill Gates ripped out his car radio:
+                </span>
+                <br />
+                <br />
+                MM: “Back in the 1980s, Bill Gates gave me a ride to the
+                airport, and the radio was missing from the car. Big gaping hole
+                in the dashboard. I said ‘Bill what happened, did you get ripped
+                off?” <br />
+                <br />
+                BG: “No, I had it taken out.” <br />
+                <br />
+                MM: “Why did you have it taken out?” <br />
+                <br />
+                BG: “I drive from my home to the office, which is seven minutes
+                and 32 seconds. And then I’ll drive from the office to the
+                airport which is however long. If I’ve got the radio, I’m afraid
+                that I’ll switch it on and I won’t be thinking about Microsoft.”
+                <br /> <br />
+                <span className='spanText'>“That’s obsession.”</span>
+              </p>
+            </div>
+            <div className='collectionItemContainer'>
+              <a
+                href='https://zach.blog/p/inescapable-ideas-obsession-hours-motivation-ten-bullets?utm_source=zach.blog&utm_medium=newsletter&utm_campaign=on-inescapable-ideas-obsession-hours-and-motivation-ten-bullets'
+                target='_blank'
+                className='collectionLink'
+                rel='noreferrer'
+              >
+                via Ten Bullets newsletter
+              </a>
+            </div>
           </div>
         ) : (
           <div className='wrapper'>
@@ -106,7 +140,9 @@ const App = () => {
           </div>
         )}
       </header>
-      <p className={showCollection ? 'copyrightCollectionView' : 'copyright'}>Made by Karina :) </p>
+      <p className={showCollection ? 'copyrightCollectionView' : 'copyright'}>
+        Made by Karina :)
+      </p>
     </div>
   );
 };
