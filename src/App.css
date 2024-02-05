@@ -167,6 +167,21 @@ a {
   cursor: pointer;
  }
 
+ .eyesImg {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: -8px;
+ }
+
+ .countContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+ }
+
 @media (max-width: 767px) {
 .mediaContainer {
  margin-left: 2px;

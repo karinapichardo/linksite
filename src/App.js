@@ -3,16 +3,25 @@ import youtubeLogo from './youtube.png';
 import xLogo from './twitter.png';
 import mediumLogo from './medium.png';
 import emailLogo from './email.png';
+import eyeballs from './eyeballs.png';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import MediaContainer from './MediaContainer';
 
 const App = () => {
   const [showCollection, setCollection] = useState(false);
+  const initialCount = parseInt(localStorage.getItem('clickCount')) || 1;
+
+  const [clickCount, setClickCount] = useState(initialCount);
+
+  useEffect(() => {
+    localStorage.setItem('clickCount', clickCount.toString());
+  }, [clickCount]);
 
   const handleOnClick = () => {
     setCollection(true);
+    setClickCount((prevCount) => prevCount + 1);
   };
 
   const goBack = () => {
@@ -39,9 +48,14 @@ const App = () => {
         </p>
 
         {showCollection ? (
+          <>
           <p className='inspoHeader' onClick={goBack}>
             Go back
           </p>
+          <div className='countContainer'>
+         {clickCount} <img src={eyeballs} alt="eye balls" className='eyesImg'/>
+         </div>
+          </>
         ) : (
           <p className='inspoHeader' onClick={handleOnClick}>
             Click for collection of things that inspire me
