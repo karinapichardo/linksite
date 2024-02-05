@@ -158,9 +158,14 @@ a {
   padding: 20px;
 }
 
-.kobeName {
-  font-weight: bold;
-}
+.scrollupButton {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+ }
 
 @media (max-width: 767px) {
 .mediaContainer {

@@ -19,6 +19,13 @@ const App = () => {
     setCollection(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className='App'>
       <header className='App-header'>
@@ -50,7 +57,7 @@ const App = () => {
                 better, the results don’t really matter, it’s the figuring out
                 that matters” <br />
                 <br />
-                <span className='kobeName'>- Kobe Bryant</span>
+                <span className='spanText'>- Kobe Bryant</span>
               </p>
             </div>
             <div className='collectionItemContainer'>
@@ -136,6 +143,12 @@ const App = () => {
                 via Ten Bullets newsletter
               </a>
             </div>
+            <div className='collectionItemContainer'>
+            <p className='quote'>
+              “The only way to win is to learn faster than anyone else.”<br/><br/>
+              <span className='spanText'>― Eric Ries, The Lean Startup</span>
+            </p>
+            </div>
           </div>
         ) : (
           <div className='wrapper'>
@@ -161,6 +174,10 @@ const App = () => {
           </div>
         )}
       </header>
+      {showCollection &&
+        <button onClick={scrollToTop} className='scrollupButton'>
+        Scroll to top
+      </button>}
       <p className={showCollection ? 'copyrightCollectionView' : 'copyright'}>
         Made by Karina :)
       </p>
