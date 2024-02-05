@@ -178,4 +178,8 @@ a {
   width: 28px;
   height: 28px;
  }
+
+ .scrollupButton {
+  display: none;
+ }
 }
